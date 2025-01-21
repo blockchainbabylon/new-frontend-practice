@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Color Picker Tool</h1>
+        <div class="sliders">
+            <div>
+                <label for="red">Red:</label>
+                <input type="range" id="red" min="0" max="255" value="125">
+            </div>
+            <div>
+                <label for="green">Green:</label>
+                <input type="range" id="green" min="0" max="255" value="125">
+            </div>
+            <div>
+                <label for="blue">Blue:</label>
+                <input type="range" id="blue" min="0" max="255" value="125">
+            </div>
+        </div>
+        <div class="output">
+            <div id="color-display"></div>
+            <p>RGB Code: <span id="color-code">rgb(125, 125, 125)</span></p>
+            <button id="copy-button">Copy to Clipboard</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
